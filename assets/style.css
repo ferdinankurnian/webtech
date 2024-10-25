@@ -1,0 +1,13 @@
+body, html {
+    background: #08051A;
+    height: 100%;
+    margin: 0;
+}
+  
+.loading-load {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    flex-direction: column;
+}
