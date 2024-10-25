@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiTimer</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-display">
+            <h1 id="timer-text" class="timer-text">000:00</h1>
+        </div>
+        <div class="input-second">
+            <input type="text" name="seconds" id="seconds" maxlength="3" placeholder="Enter seconds">
+        </div>
+        <div class="btn-group">
+            <button onclick="startTimer()" class="start-timer">Start Timer</button>
+            <button onclick="stopTimer()" class="stop-timer">Stop Timer</button>
+            <button onclick="resetTimer()" class="reset-timer">Reset Timer</button>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
