@@ -1,0 +1,35 @@
+body, html {
+    background: #cbcbcb;
+    height: 100%;
+    margin: 0;
+}
+
+.container { 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    flex-direction: column;
+}
+
+.field {
+    position: relative;
+    width: 400px;
+    height: 320px;
+    background-color: #007F00;
+}
+
+.ball {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin: 8.5rem 2rem;
+    animation: move 2s forwards;
+}
+
+@keyframes move {
+    30% { transform: translateX(0); }  
+    100% { transform: translateX(300px); }
+}
