@@ -1,0 +1,266 @@
+* {
+    font-family: "Roboto", serif;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+a { 
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background-color: #F0F5FC;
+    margin: 0;
+}
+
+nav {
+    background-color: #135FC1;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav span {
+    color: #fff;
+}
+
+.chat-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 7px;
+}
+
+.chat-item a {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 1rem;
+    padding: 11px 20px;
+    align-items: center;
+}
+
+.chat-item a:hover {
+    background-color: #dfdfdf;
+}
+
+.chat-item a img {
+    width: 50px;
+    height: 50px;
+}
+
+.chat-item-info h2 {
+    font-size: 15px;
+}
+
+.chat-item-info p {
+    font-size: 11px;
+    opacity: 0.6;
+}
+
+li.chat-divider {
+    padding: 0 30px;
+}
+
+li.chat-divider hr {
+    opacity: 0.3;
+}
+
+time {
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+.navbottom {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #CDDBEF;
+}
+
+.navbottom .container {
+    padding: 13.5px 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbottom .container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbottom .container a > span {
+    font-size: 12px;
+}
+
+.navbottom .container a > span.material-symbols-outlined {
+    font-size: 20px;
+}
+
+.add-chat-menu div {
+    background-color: #1460C2;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+}
+
+.add-chat-menu span {
+    color: #fff;
+    margin: auto auto;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.back-button { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.back-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.user-detail h3 {
+    font-size: 15px;
+}
+
+.user-detail p {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.navbottom .message-container {
+    padding: 17.5px 15px !important;
+}
+
+.navbottom form {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    width: 100%;
+}
+
+.navbottom input[type="text"] {
+    outline: 0;
+    border: 0;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.navbottom button[type="submit"] {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    background-color: #1460C2;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.navbottom button[type="submit"] span {
+    margin: auto auto;
+}
+
+.endtoend-info {
+    background-color: #65B5FF;
+    color: #041730;
+    margin: 15px 75px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.endtoend-info span {
+    font-size: 13px;
+}
+
+.endtoend-info p {
+    font-size: 11px;
+}
+
+.chat-display {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 25px;
+    margin-top: 7px;
+}
+
+.chat-receiver .chat-balloon {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #BED8FF;
+    width: fit-content;
+}
+
+.chat-receiver, .chat-sender {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.chat-receiver .chat-balloon::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid #BED8FF;
+}
+
+
+.chat-sender .chat-balloon {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #1688DA;
+    color: #fff;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.chat-sender, .chat-sender {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.chat-sender .chat-balloon::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #1688DA;
+}
